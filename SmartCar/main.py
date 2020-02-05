@@ -9,13 +9,13 @@ while True:
         if park_detector()==20:
             b = directionfinder()
             if(b==1):
-                print('duz')
+                print('Straight')
                 ser.write(b'\x31\r\n')
             elif(b==2):
-                print('sag')
+                print('Right')
                 ser.write(b'\x32\r\n')
             elif(b==3):
-                print('sol')
+                print('Left')
                 ser.write(b'\x33\r\n')
         else:
             c = park_detector()

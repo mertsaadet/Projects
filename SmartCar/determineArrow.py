@@ -3,9 +3,9 @@ import numpy as np
 import sys
 
 def directionfinder():
-    right_cascade= cv2.CascadeClassifier('cascade_sag.xml')
-    left_cascade= cv2.CascadeClassifier('cascade_sol.xml')
-    forward_cascade= cv2.CascadeClassifier('cascade_duz.xml')
+    right_cascade= cv2.CascadeClassifier('cascade_right.xml')
+    left_cascade= cv2.CascadeClassifier('cascade_left.xml')
+    forward_cascade= cv2.CascadeClassifier('cascade_straight.xml')
     cap = cv2.VideoCapture(1)
 
     tot=f=l=r=0
