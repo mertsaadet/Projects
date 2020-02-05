@@ -1,5 +1,5 @@
 import serial
-from erayslayer import directionfinder
+from determineArrow import directionfinder
 from determineParkingZone import park_detector
 
 ser = serial.Serial('/dev/ttyUSB1',9600)
